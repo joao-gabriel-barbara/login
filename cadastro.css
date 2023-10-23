@@ -1,0 +1,107 @@
+:root{
+    --login-titulo: #ffffff;
+    --main-background: #201b2c;
+    --card-background: #2f2841;
+    --box-shadow: #00000056;
+    --h1-color: #4D2D4D;
+    --input-color: #000000de;
+    --background-input: #514869;
+    --placeholder: #00000094;
+    --btn-login: #2b134b;
+    --btn-shadow: #00ff8052;
+
+    --novo-background:#11001C;
+    --novo-card-background: #ffffff;
+    --fonte-color-card: #4F0147;
+}
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: var(--novo-background);
+}
+
+body *{
+    box-sizing: border-box;
+}
+.register{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+}
+.card-register{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: var(--novo-card-background);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-register > h1 {
+    color: var(--h1-color);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    color:  var(--input-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #f8f8f8;
+    color: var(--input-color);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: var(--input-color);
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: var(--placeholder)
+}
+
+.btn-login{
+    width: 50%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background: var(--btn-login);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000052;
+    transition: 1s;
+}
+
+.btn-login:hover{
+    transition: 1s;
+    background: #593e74
+    
+}
